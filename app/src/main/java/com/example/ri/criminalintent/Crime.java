@@ -9,7 +9,7 @@ public class Crime {
     private Date mDate;
     private boolean mSolved;
 
-    public Crime(){
+    public Crime() {
         //generate unique identifier
         mId = UUID.randomUUID();
         mDate = new Date();
@@ -41,5 +41,11 @@ public class Crime {
 
     public void setSolved(boolean solved) {
         mSolved = solved;
+    }
+
+
+    @Override
+    public String toString() {
+        return mTitle;
     }
 }
